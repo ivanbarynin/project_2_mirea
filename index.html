@@ -20,6 +20,9 @@
     </div>
     <hr class="header__divider">
     <nav class="header__nav">
+        <button class="header__burger" aria-label="Меню">
+            <i class="fas fa-bars"></i>
+        </button>
         <ul class="header__nav-list">
             <li class="header__nav-item"><a href="#new-ceramics" class="header__nav-link">Plant pots</a></li>
             <li class="header__nav-item"><a href="#new-ceramics" class="header__nav-link">Ceramics</a></li>
@@ -221,6 +224,12 @@
         </nav>
     </div>
 </footer>
+
+<script>
+    document.querySelector('.header__burger').addEventListener('click', function() {
+        document.querySelector('.header__nav-list').classList.toggle('active');
+    });
+</script>
 
 </body>
 </html>
