@@ -6,6 +6,7 @@
     <title>Avion</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mobile.css">
 </head>
 <body>
 
@@ -124,13 +125,13 @@
                 <p class="product-card__price">£980</p>
             </article>
 
-            <article class="product-card product-card--large">
+            <article class="product-card">
                 <img src="assets/img/Photo.png" alt="The Dandy chair" class="product-card__image">
                 <h3 class="product-card__title">The Dandy chair</h3>
                 <p class="product-card__price">£250</p>
             </article>
 
-            <article class="product-card product-card--large">
+            <article class="product-card">
                 <img src="assets/img/Photo(3).png" alt="The Dandy chair" class="product-card__image">
                 <h3 class="product-card__title">The Dandy chair</h3>
                 <p class="product-card__price">£250</p>
@@ -225,10 +226,11 @@
     </div>
 </footer>
 
-<script>
-    document.querySelector('.header__burger').addEventListener('click', function() {
-        document.querySelector('.header__nav-list').classList.toggle('active');
-    });
+<button id="back-to-top" class="back-to-top" aria-label="Вернуться наверх">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="scripts/menu.js">
 </script>
 
 </body>
